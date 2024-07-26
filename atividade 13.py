@@ -54,7 +54,7 @@ while boleto == 'S':
     vendas.GerarIDVenda()
     vendas.GerarDataVencimento()
     fatura.write(f'"ID do CLIENTE": {vendas.id_cliente}''\n'f'ID da VENDA: {vendas.id_venda}''\n'f'ITENS COMPRADOS: {vendas.itens_vendidos}''\n'
-                f'A QUANTIDADE foi de: {vendas.itens_vendidos}''\n'f'O VALOR da FATURA é de R$: {vendas.preco_total}'
+                f'A QUANTIDADE foi de: {vendas.quantidade}''\n'f'O VALOR da FATURA é de R$: {vendas.preco_total}'
                 '\n'f'O VENCIMENTO de sua FATURA é: {vendas.data_vencimento}' )
     fatura.close()
 
