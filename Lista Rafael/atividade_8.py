@@ -1,4 +1,4 @@
-""" ANDRÉ MARTINS BRANDÃO ™
+""" ANDRÉ MARTINS BRANDÃO ™2
 Desenvolva um sistema para registrar compras de produtos. Cada compra deve ter um ID, 
 data, ID do fornecedor, ID do produto e quantidade comprada. Os dados devem ser armazenados em um arquivo compras.txt.
 """
