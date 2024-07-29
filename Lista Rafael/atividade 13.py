@@ -1,3 +1,8 @@
+'''Atividade 13: Sistema de Faturamento - LUCAS 
+Crie um módulo para gerar faturas de vendas.
+Cada fatura deve incluir o ID da venda, data, itens vendidos, quantidade, preço total e ID do cliente.
+As faturas devem ser salvas em um arquivo faturas.txt. '''
+
 import random
 from datetime import datetime, timedelta
 
@@ -43,7 +48,7 @@ class Fatura:
 
 boleto = input('Deseja gerar um BOLETO? S/N: ')
 while boleto == 'S':
-    fatura = open('C:/Users/horlab208/Documents/LUCAS GUILHERME ROCHA DE ASSIS/ATIVIDADE RAFAEL/Atividade_Objetos/Lista Rafael/faturas.txt', 'a')
+    fatura = open('C:/Users/horlab208/Documents/LUCAS GUILHERME ROCHA DE ASSIS/ATIVIDADE RAFAEL/Atividade_Objetos/faturas.txt', 'a')
     vendas = Fatura(input('Digite o nome dos ITENS comprados: '), input('Digite a QUANTIDADE de itens comprados: '), int(input('Digite o valor total da compra R$: ')))
     vendas.GerarIDCliente()
     vendas.GerarIDVenda()
